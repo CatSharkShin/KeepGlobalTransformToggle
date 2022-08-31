@@ -11,5 +11,3 @@ A [NeosModLoader](https://github.com/zkxs/NeosModLoader) mod for [Neos VR](https
 1. Use the Toggle labeled "Global" or "Local" in your inspector to toggle the value
 
 https://user-images.githubusercontent.com/53709818/187578294-5abdeb9a-0041-4950-8985-617e3aff3660.mp4
-
-*Im planning on adding Scale/Rotation/Position Dropping*
