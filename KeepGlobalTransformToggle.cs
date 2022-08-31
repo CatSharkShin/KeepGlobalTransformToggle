@@ -59,6 +59,7 @@ namespace KeepGlobalTransformToggle
                 }
                 DynamicValueVariable<bool> valueVariable = text.Slot.AttachComponent<DynamicValueVariable<bool>>();
                 valueVariable.VariableName.Value = "TransformTweaks/keepGlobalTransform";
+                valueVariable.Value.Value = true;
                 ButtonToggle buttonToggle = text.Slot.AttachComponent<ButtonToggle>();
                 buttonToggle.TargetValue.Target = valueVariable.Value;
                 ValueOptionDescriptionDriver<bool> optionDriver = text.Slot.AttachComponent<ValueOptionDescriptionDriver<bool>>();
