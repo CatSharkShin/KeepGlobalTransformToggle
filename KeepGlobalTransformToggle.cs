@@ -1,16 +1,17 @@
 ﻿using BaseX;
 using FrooxEngine;
+using FrooxEngine.LogiX.WorldModel;
 using FrooxEngine.UIX;
 using FrooxEngine.Undo;
 using HarmonyLib;
 using NeosModLoader;
 using System.Collections.Generic;
 
-namespace TransformTweaks
+namespace KeepGlobalTransformToggle
 {
-    public class TransformTweaks : NeosMod
+    public class KeepGlobalTransformToggle : NeosMod
     {
-        public override string Name => "Transform Tweaks";
+        public override string Name => "KeepGlobalTransformToggle";
 
         public override string Author => "CatShark";
 
@@ -18,7 +19,7 @@ namespace TransformTweaks
 
         public override void OnEngineInit()
         {
-            Harmony harmony = new Harmony("me.catshark.TransformTweaks");
+            Harmony harmony = new Harmony("me.catshark.KeepGlobalTransformToggle");
             harmony.PatchAll();
         }
         [HarmonyPatch(typeof(SceneInspector),"OnChanges")]

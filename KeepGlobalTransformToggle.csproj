@@ -7,8 +7,8 @@
     <ProjectGuid>{22748A46-3E85-4A50-A063-980E71F1956A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TransformTweaks</RootNamespace>
-    <AssemblyName>TransformTweaks</AssemblyName>
+    <RootNamespace>KeepGlobalTransformToggle</RootNamespace>
+    <AssemblyName>KeepGlobalTransformToggle</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -53,7 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TransformTweaks.cs" />
+    <Compile Include="KeepGlobalTransformToggle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
