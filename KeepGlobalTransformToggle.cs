@@ -15,7 +15,7 @@ namespace KeepGlobalTransformToggle
 
         public override string Author => "CatShark";
 
-        public override string Version => "1.0";
+        public override string Version => "1.1";
 
         public override void OnEngineInit()
         {
