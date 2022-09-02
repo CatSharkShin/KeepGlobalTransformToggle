@@ -1,5 +1,6 @@
 ﻿using BaseX;
 using FrooxEngine;
+using FrooxEngine.LogiX.References;
 using FrooxEngine.LogiX.WorldModel;
 using FrooxEngine.UIX;
 using FrooxEngine.Undo;
@@ -15,7 +16,7 @@ namespace KeepGlobalTransformToggle
 
         public override string Author => "CatShark";
 
-        public override string Version => "1.1";
+        public override string Version => "1.1.1";
 
         public override void OnEngineInit()
         {
@@ -27,6 +28,10 @@ namespace KeepGlobalTransformToggle
         {
             static void Postfix(SceneInspector __instance)
             {
+                if (__instance.ReferenceID.User != __instance.LocalUser.AllocationID)
+                {
+                    return;
+                }
                 SyncRef<Slot> hierarchyContentRoot = (SyncRef<Slot>)AccessTools.Field(typeof(SceneInspector),"_hierarchyContentRoot").GetValue(__instance);
                 if(hierarchyContentRoot.Target.ChildrenCount != 1)
                 {
