@@ -60,6 +60,8 @@ namespace KeepGlobalTransformToggle
                 {
                     DynamicVariableSpace dvs = userRoot.AttachComponent<DynamicVariableSpace>();
                     dvs.SpaceName.Value = "TransformTweaks";
+                    dvs.OnlyDirectBinding.Value = true;
+                    dvs.Persistent = false;
                     dynVarSpace = dvs;
                 }
                 DynamicValueVariable<bool> valueVariable = text.Slot.AttachComponent<DynamicValueVariable<bool>>();
